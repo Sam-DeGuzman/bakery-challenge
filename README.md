@@ -1,3 +1,1 @@
-# bakery-challenge Initial Commit
-
-## Avion Bakery Coding Challenge
+# Avion Bakery Coding Challenge
