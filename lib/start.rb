@@ -1,4 +1,5 @@
 require 'pry'
+require_relative 'pastry'
 
 #VEGEMITE 
 # packs and prices
@@ -57,8 +58,8 @@ require 'pry'
 
 
 
-#VEGEMITE
-def divideByRatio(num)
+#VEGEMITE Order example
+def OrderVegemite(num)
     pack1 = {:qty => 3, :price => 6.99}
     pack2 = {:qty => 5, :price => 8.99}
 
@@ -76,7 +77,7 @@ def divideByRatio(num)
     if num % 5 == 0
         puts pack2[:price] * computeQty(num,pack2[:qty])
         
-    elsif (num % 5) % 3 = 0 
+    elsif (num % 5) % 3 == 0 
         by5 = num % 5
         by3 = num % 3
         
@@ -86,10 +87,16 @@ def divideByRatio(num)
 
 end
 
-
-def computeQty(num,divisor)
+def computeQty(num, divisor)
     num / divisor
 end
 
+# OrderVegemite(11)
 
-divideByRatio(11)
+vegemite = Pastry.new
+
+# binding.pry
+
+vegemite.order(10, "CF")
+
+
