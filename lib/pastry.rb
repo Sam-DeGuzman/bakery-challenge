@@ -1,3 +1,4 @@
+require 'pry'
 class Pastry
     
 def initialize(vs_by_3 = 0, vs_by_5 = 0)
@@ -28,7 +29,7 @@ def order(qty,code)
             #     by_5 = quantity / 5
             # end
             # return "Pack/s of 3: #{by_3}, Pack/s of 5: #{by_5}, Cost: $#{computePrice(@pack1[:price] * by_3, @pack2[:price] * by_5)}"
-
+            # binding.pry
             getQtyVeg(quantity)
         end
 
